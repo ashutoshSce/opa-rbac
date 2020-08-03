@@ -1,0 +1,93 @@
+{
+    "roles": {
+        "raghu": [
+            "admin"
+        ],
+        "vinay": [
+            "editor"
+        ],
+        "ashok": [
+            "author"
+        ],
+        "sushil": [
+            "contributor"
+        ],
+        "ashutosh": [
+            "subscriber"
+        ]
+    },
+    "permissions": {
+        "subscriber": [
+            {
+                "action": "read",
+                "type": "post"
+            },
+            {
+                "action": "comment",
+                "type": "post"
+            }
+        ],
+        "contributor": [
+            {
+                "action": "read",
+                "type": "post"
+            },
+            {
+                "action": "comment",
+                "type": "post"
+            },
+            {
+                "action": "edit",
+                "type": "own-unpublished-post"
+            },
+            {
+                "action": "delete",
+                "type": "own-unpublished-post"
+            }
+        ],
+        "author": [
+            {
+                "action": "read",
+                "type": "post"
+            },
+            {
+                "action": "comment",
+                "type": "post"
+            },
+            {
+                "action": "edit",
+                "type": "own-post"
+            },
+            {
+                "action": "delete",
+                "type": "own-post"
+            },
+            {
+                "action": "publish",
+                "type": "own-post"
+            }
+        ],
+        "editor": [
+            {
+                "action": "read",
+                "type": "post"
+            },
+            {
+                "action": "comment",
+                "type": "post"
+            },
+            {
+                "action": "edit",
+                "type": "post"
+            },
+            {
+                "action": "delete",
+                "type": "post"
+            },
+            {
+                "action": "publish",
+                "type": "post"
+            }
+        ]
+    }
+}
